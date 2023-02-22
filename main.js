@@ -1,4 +1,4 @@
-function load () {
+function loadlab() {
     let column_1 = [2,4,5,5,3,2,4,1,9,4,3,3,5,8,4,9,10,1,8,3,3,2,8,3,10,4,7,1,5,1];
     let column_2 = [3,3,5,1,7,2,6,3,4,9,5,4,6,2,2,1,3,9,5,7,10,7,5,5,8,7,8,9,2,5];
     let column_3 = [88,93,50,51,82,54,79,49,42,41,68,71,99,93,62,42,71,54,41,58,55,83,69,41,41,67,90,71,66,50];
@@ -10,9 +10,9 @@ function load () {
     let sum_4 = column_4[0] + column_4[1] + column_4[2] + column_4[3] + column_4[4] + column_4[5] + column_4[6]+ column_4[7]+ column_4[8]+ column_4[9]+ column_4[10]+ column_4[11]+ column_4[12]+ column_4[13]+ column_4[14]+ column_4[15]+ column_4[16]+ column_4[17]+ column_4[18]+ column_4[19] + column_4[20] + column_4[21] + column_4[22] + column_4[23] + column_4[24] + column_4[25] + column_4[26] + column_4[27] + column_4[28] + column_4[29]; 
     let sums = [sum_1, sum_2, sum_3, sum_4];
 
-    sums = 0;
-    for (i = 0;i<column_1.length;i++) {
-        sums = sums + column_1[i];
+    total = 0;
+    for (i = 0;i<sums.length;i++) {
+        total = total + sums[i];
     }
     //total score as a sum of entries in all columns
 
@@ -22,7 +22,7 @@ function load () {
         col3: [88,93,50,51,82,54,79,49,42,41,68,71,99,93,62,42,71,54,41,58,55,83,69,41,41,67,90,71,66,50],	
         col4: [64,60,83,84,57,52,76,85,81,65,90,67,42,85,87,96,51,100,40,75,44,92,61,91,68,44,79,68,45,43],	
         sums: [sum_1, sum_2, sum_3, sum_4], // array of sums of each column
-        total_score: sums,	// computed total score
+        total_score: total,	// computed total score
     }
        
     console.log (results)
